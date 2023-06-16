@@ -7,10 +7,10 @@ import inspect
 pd.set_option('display.max_columns', 100)
 
 # Load data
-firm_attr = pd.read_csv('C:/Users/bs-lokal/Desktop/Python_Stuff/ANewModelEveryMonth/datashare.csv', 
+firm_attr = pd.read_csv('C:\\Users\\bs-lokal\\Desktop\\git_repos\\anmem_data\\data\\datashare.csv', 
                         delimiter=',')
 
-stock_returns = pd.read_csv('C:/Users/bs-lokal/Desktop/Python_Stuff/ANewModelEveryMonth/mth_stock_returns.csv')
+stock_returns = pd.read_csv('C:\\Users\\bs-lokal\\Desktop\\git_repos\\anmem_data\\data\\mth_stock_returns.csv')
 
 #########################
 ## Basic Preprocessing ##

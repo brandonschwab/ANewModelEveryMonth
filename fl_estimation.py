@@ -12,7 +12,7 @@ from helper_functions import impute_missing_timestamps, create_design_matrix
 from reg_lasso_class import reg_lasso
 
 # load data
-with open('data\df_prep_sd.pkl', 'rb') as file:
+with open('C:\\Users\\bs-lokal\\Desktop\\git_repos\\anmem_data\\data\\df_prep_sd.pkl', 'rb') as file:
     df = pickle.load(file)
 
 # init instance for fused lasso

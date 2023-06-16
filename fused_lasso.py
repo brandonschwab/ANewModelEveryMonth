@@ -13,7 +13,7 @@ from reg_lasso_class import reg_lasso
 
 # load data
 # Load the pickle file
-with open('data\df_prep_sd.pkl', 'rb') as file:
+with open('C:\\Users\\bs-lokal\\Desktop\\git_repos\\anmem_data\\data\\df_prep_sd.pkl', 'rb') as file:
     df = pickle.load(file)
 
 #df = pd.read_csv('C:/Users/bs-lokal/Desktop/ANewModelEveryMonth/df_prep_mad.csv')

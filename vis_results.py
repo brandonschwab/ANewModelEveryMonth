@@ -17,13 +17,13 @@ attr_grouped = ['date', 'quick', 'pricedelay', 'pchquick', 'pchdepr', 'pchcurrat
 
 # import the estimated coefficients and the raw dataset
 
-with open('betas.pkl', 'rb') as file:
+with open('C:\\Users\\bs-lokal\\Desktop\\git_repos\\anmem_data\\data\\betas.pkl', 'rb') as file:
     betas = pickle.load(file)
 
-with open('beta_ols.pkl', 'rb') as file:
+with open('C:\\Users\\bs-lokal\\Desktop\\git_repos\\anmem_data\\data\\beta_ols.pkl', 'rb') as file:
     betas_ols = pickle.load(file)
 
-with open('data//df_reduced.pkl', 'rb') as file:
+with open('C:\\Users\\bs-lokal\\Desktop\\git_repos\\anmem_data\\data\\df_reduced.pkl', 'rb') as file:
     df = pickle.load(file)
 
 
@@ -37,6 +37,8 @@ chunks = [betas[i:i+T] for i in range(0, len(betas), T)]
 coefs = pd.DataFrame({'time': range(T)})
 for i in range(len(attr)):
     coefs[attr[i]] = chunks[i]   
+
+coefs.mean()*100
 
 dates = np.sort(df.date.unique())
 coefs.insert(1, 'date', dates)
